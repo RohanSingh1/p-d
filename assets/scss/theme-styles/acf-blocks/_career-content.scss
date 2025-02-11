@@ -1,0 +1,126 @@
+.pd-career-content{
+    padding: 60px 0 10px;
+    background-color: #F8F3F0;
+    @include breakpoint(tabletLarge){
+        padding: 80px 0 40px;
+    }
+    .container{
+        max-width: 938px;
+    }
+    &__title{
+        margin: 0;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0 0 10px;
+    }
+    &-item {
+        padding: 30px 0 40px;
+        &:not(:last-child){
+            border-bottom: 1px solid rgba(29, 27, 20, 0.20);
+        }            
+        &__venue{
+            font-size: 12px;
+            text-decoration: underline;
+            text-transform: uppercase;            
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+        &__title{
+            font-family: $font__primary;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin: 0 0 10px;
+            line-height: 1;
+            font-size: 20px;
+            @include breakpoint( tabletLarge ){
+                font-size: 30px;
+            }
+        }
+        &-description{
+            &__date {
+                font-family: $font__primary;
+                text-transform: uppercase;
+                opacity: .6;                
+                margin: 0 0 10px;
+                display: inline-block;
+                font-size: 10px;
+                @include breakpoint( tabletLarge ){
+                    font-size: 12px;
+                }
+            }
+            &__body {
+                font-size: 20px;
+                line-height: 1.35;
+                margin-bottom: 10px;
+                font-size: 14px;
+                @include breakpoint( tabletLarge ){
+                    font-size: 16px;
+                }
+                :not( h5, h6 ){
+                    opacity: .7;
+                }
+                h5,
+                h6 {
+                    font-family: $font__primary;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    @include breakpoint( tabletLarge ){
+                        font-size: 20px;
+                    }
+                }
+            }
+            .text-toggle {
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.05;
+                cursor: pointer;
+                font-size: 14px;
+                @include breakpoint( tabletLarge ){
+                    font-size: 20px;
+                }
+                span {
+                    display: none;
+                }
+            }
+        }
+        .pd_button {
+            display: inline-block;
+            border-radius: 0;
+            margin-top: 15px;
+            width: 100%;
+            font-size: 14px;
+            padding: 9px 27px;
+            line-height: 1;
+            @include breakpoint( sm ){
+                width: auto;
+            }
+            @include breakpoint( tabletLarge ){
+                font-size: 20px;
+                padding: 10px 27px;
+            }
+        }
+        &-button__call {
+            display: inline-block;
+            font-family: $font__primary;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 21px;
+            margin-top: 14px;
+            text-align: center;
+            width: 100%;
+            @include breakpoint( sm ){
+                margin-left: 19px;
+                font-size: 14px;
+                width: auto;
+                text-align: unset;
+            }
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+}

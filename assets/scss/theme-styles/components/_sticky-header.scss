@@ -1,0 +1,31 @@
+.sticky,
+.header__bg {
+    background-color: $off__white;
+    
+	.ham-icon {
+		span{
+			background: $black_button;
+		}
+	}
+	.masthead__inner-center svg path{
+		fill: $black_button;
+		
+	}
+	.pd_button_bg--transparent{
+		border-color: $black_button;
+		color: $black_button;
+		&:hover{
+			color: $white;
+			background-color: $black;
+			text-shadow: 0 0 12px #000;
+		}
+	}
+}
+.menu-open .sticky,
+.menu-open .header__bg{
+	.ham-icon {
+		span{
+			background: $white;
+		}
+	}
+}

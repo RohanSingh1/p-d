@@ -1,0 +1,19 @@
+.page-template-landing-page {
+    #masthead, 
+    .site-footer {
+        display: none;
+    }
+    .masthead__inner-center {
+        margin: 0 auto;
+    }
+    .custom-logo-link svg path {
+        fill: black;
+    }
+    .pd-landing-page{
+        background: #F8F3F0;
+        min-height: 100vh;
+    }
+    .masthead {
+        position: relative;
+    }
+}

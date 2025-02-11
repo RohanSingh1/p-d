@@ -1,0 +1,92 @@
+.postname-flora {    
+    font-family: $frankruhllibre;
+    .pd-venue-banner {
+        &-content{
+            img {
+                margin: 0 auto 15px;
+                max-width: 280px;
+                @media ( min-height: 900px ){
+                    max-width: 480px;
+                }
+            }
+            &__desc p {
+                margin-bottom: 20px;
+            }
+        }
+        .pd_button{
+            font-family: $frankruhllibre;
+            font-size: 16px;
+            padding: 9px 50px;
+            @include breakpoint( tabletLarge ){
+                font-size: 20px;
+                padding: 10px 50px;
+            }
+        }
+    }
+    .pd-intro {
+        &-content__title{
+            font-family: $frankruhllibre;
+            font-weight: 400;        
+            letter-spacing: -0.39px;
+            @include breakpoint( tabletLarge ){
+                letter-spacing: -0.62px;
+            }
+        }
+        .pd_button{
+            font-family: $frankruhllibre;
+            padding: 9px 50px;
+            @include breakpoint( tabletLarge ){
+                padding: 10px 50px;
+            }
+        }
+    }
+    .pd-menu {
+        &-content {
+            &__title{
+                font-family: $frankruhllibre;
+                font-weight: 400;
+            }        
+            table {
+                line-height: 1.52;
+            }
+        }
+        .pd-link-animate:after{
+            bottom: 2px;
+            @include breakpoint( tabletLarge ){
+                bottom: 5px;
+            }
+        }
+    }
+    .venue-cta {
+        background-color: $off__white;
+        &__title{
+            font-family: $frankruhllibre;
+            letter-spacing: -0.39px;
+            @include breakpoint( tabletLarge ){
+                letter-spacing: -0.42px;
+            }
+        }        
+        &__table {
+            font-family: $frankruhllibre;
+            &__title{
+                font-family: $frankruhllibre;
+                letter-spacing: -0.21px;
+            }
+            &__newsletter{
+                input[type="email"] {
+                    &::placeholder {
+                        font-family: $frankruhllibre;
+                    }
+                }
+            
+                #sr-subscription-root {
+                    & > button {
+                        span {
+                            font-family: $frankruhllibre !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

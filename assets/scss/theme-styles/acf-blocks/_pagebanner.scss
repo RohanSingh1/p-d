@@ -1,0 +1,56 @@
+.pd-pagebanner {
+    position: relative;
+    height: 100vh;
+    color: $white;    
+    background-position: center;
+    background-size: cover;
+    &:before {
+        content: '';
+        position: absolute;
+        background: linear-gradient(0deg, rgba(29, 27, 20, 0.40) 0%, rgba(29, 27, 20, 0.40) 100%);
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        height: 100%;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+    }
+    &-content {
+        // position: absolute;
+        // text-align: center;
+        // top: 50%;
+        // left: 0;
+        // width: 100%;
+        // transform: translateY(-50%);
+        // margin-top: -60px;
+        &__title {
+            margin: 0;
+            line-height: 1;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: 52px;
+            @include breakpoint( sm ){
+                font-size: 94.81px;
+            }
+        }
+        &__desc{
+            max-width: 672px;
+            width: 100%;
+            margin: 0 auto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 31px; /* 155% */
+            @include breakpoint( tabletLarge ){
+                font-size: 20px;
+            }
+        }
+    }
+}

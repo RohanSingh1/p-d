@@ -1,0 +1,10 @@
+.dashicons-themeicon:before {
+	content: "";
+	display: block;
+	background-image: url("../images/theme-favicon.png");
+	width: 20px;
+	height: 20px;
+	background-size: cover;
+	background-position: 50%;
+	border-radius: 3px;
+}

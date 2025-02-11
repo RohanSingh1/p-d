@@ -1,0 +1,26 @@
+.pd__loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: $black;
+    z-index: 99999999;
+    /* transition: transform .8s cubic-bezier(.25,.1,.29,.99); */
+    overflow: hidden;
+    transition: height .8s cubic-bezier(.25,.1,.29,.99);
+    &.hide{
+        height: 0;
+    }
+    &__inner{
+        padding: 0 10px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+            max-width: 400px;
+            width: 100%;
+        }
+    }
+}

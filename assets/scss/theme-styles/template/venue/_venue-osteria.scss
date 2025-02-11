@@ -1,0 +1,151 @@
+.postname-osteria-mucca{
+    font-family: $font__category;
+    .pd-venue-banner{
+        &-content__desc{   
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-size: 14px;
+            @include breakpoint( tabletLarge ){
+                font-size: 16px;
+            }
+            p:not(:last-child):after {
+                content: '';
+                width: 40%;
+                min-width: 200px;
+                height: 1px;
+                background: $white;
+                display: block;
+                margin: 16px auto;
+            }
+            p {
+                line-height: 1.52;
+                margin-bottom: 23px;
+            }
+        }
+        .pd_button{
+            font-family: $font__category;
+            padding: 12px 50px 6px;
+            font-size: 16px;
+            @include breakpoint( tabletLarge ){
+                padding: 16px 50px 10px;
+                font-size: 20px;
+            }
+        }
+    }
+    .pd-intro-content{
+        color: $white;
+        &__title{
+            font-family: $font__category;
+            text-transform: uppercase;
+            font-weight: 500;
+            margin-bottom: 30px;
+            font-size: 29px;
+            br{
+                display: none;                
+                @include breakpoint( tablet ){
+                    display: block;
+                }
+            }
+            @include breakpoint( tablet ){
+                font-size: 42px;
+            }
+        }
+        .pd_button{
+            color: $white;
+            border-color: $white;
+            font-size: 16px;
+            font-family: $font__category;
+            padding: 12px 50px 6px;
+            font-size: 16px;
+            &:hover{
+                color: $black;
+            }
+            @include breakpoint( tabletLarge ){
+                padding: 16px 50px 10px;
+                font-size: 20px;
+            }
+            @include breakpoint( tablet ){
+                font-size: 20px;
+            }
+        }
+    }
+    .pd-menu{
+        background: #FBFCF2;
+        &-content{
+            &__title{
+                text-transform: uppercase;
+                font-size: 42px;
+                font-weight: 500;
+                font-family: $font__category;
+            }
+        }
+        &-links{
+            font-size: 35px;
+            color: $green;
+            @include breakpoint(tabletLarge){
+                font-size: 45px;
+            }
+            &.pd-link-animate:after {
+                background-color: $green;
+            }
+            &-wrap {
+                gap: 20px;
+                @include breakpoint( tabletLarge ){
+                    gap: 40px;                    
+                }
+            }
+        }
+    }
+    .venue-cta {
+        text-transform: uppercase;
+        background: #FBFCF2;
+        &-insta__link{
+            font-size: 22px;
+        }
+        &__title{
+            font-family: $font__category;
+            font-size: 39px;
+            font-weight: 500;
+            @include breakpoint( tablet ){
+                font-size: 42px;
+            }
+        }        
+        &__table {
+            max-width: 780px;
+            width: 100%;
+            &__title{
+                font-family: $font__category;
+                font-size: 18px;
+                font-weight: 400;
+                @include breakpoint( tablet ){
+                    font-size: 21px;
+                }
+            }
+            &__left{
+                &__phone{
+                    margin-bottom: 15px;
+                }
+            }
+            &__newsletter{
+                input[type="email"] {
+                    &::placeholder {
+                        font-family: $font__category;
+                    }
+                }
+                #sr-subscription-root {
+                    & > button {
+                        & > div {
+                            padding: 18px 16px 11px;
+                        }
+                        span {
+                            font-family: $font__category !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .site-footer{
+        background: #FBFCF2;
+    }
+}

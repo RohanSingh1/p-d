@@ -1,0 +1,63 @@
+
+p, h1, h2, h3, h4, h5 {
+    @include marginandpadding(0px, 0px);
+}
+p {
+    @include marginandpadding(0px, 0px);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: $cs_castle;
+    margin: 1rem 0 0.8rem;
+}
+section p{
+    margin-bottom: 0.75rem;
+    &:last-child{
+        margin-bottom: 0px;
+    }
+}
+.main p {
+    margin-bottom: 1.5rem;
+}
+
+h1, .heading-xl {
+    font-size: 39px;
+    @include breakpoint(tabletLarge){
+        font-size: 82px;
+    }
+}
+h2, .heading-l {
+	font-size: 42px;
+    @include breakpoint(tabletLarge){
+        font-size: 62px;
+    }
+}
+h3, .heading-m {
+	font-size: 39px;
+    @include breakpoint(tabletLarge){
+        font-size: 42px;
+    }
+}
+h4, .heading-sm {
+	font-size: 24px;
+    @include breakpoint(tabletLarge){
+        font-size: 34px;
+    }
+}
+h5, .heading-xs {
+	font-size: 20px;
+    @include breakpoint(tabletLarge){
+        font-size: 28px;
+    }
+}
+h6 {
+	font-size: 16px;
+    @include breakpoint(tabletLarge){
+        font-size: 22px;
+    }
+}
+
+
+p {
+	margin-bottom: 30px;
+	line-height: 25px;
+}

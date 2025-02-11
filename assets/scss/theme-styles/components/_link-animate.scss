@@ -1,0 +1,23 @@
+.pd-link{
+    &-animate {
+        position: relative;
+        &:after {
+            width: 0;
+            position: absolute;
+            height: 1px;
+            content: '';
+            transition: width 0.3s;
+            background: $black_button;
+            left: 0;
+            bottom: 5px;
+        }
+        &:hover:after {
+            width: 100%;
+        }
+    }
+    &--white{
+        &:after{
+            background: $white;
+        }
+    }
+}

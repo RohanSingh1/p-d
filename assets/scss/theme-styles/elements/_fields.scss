@@ -1,0 +1,57 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	border: 1px solid $black;
+	border-radius: 5px;
+	padding: 10px 0 10px 10px;
+	background: transparent;
+	padding: 20px;
+	&:focus {
+		outline: none;
+	}
+}
+select {
+	border: 1px solid $black;
+	background: transparent;
+	border-radius: 5px;
+	appearance: none;
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='9' fill='none'%3E%3Cpath stroke='%23fff' d='m.508 1.127 6.746 6.746 6.747-6.746'/%3E%3C/svg%3E");
+	background-position: 98%;
+	background-repeat: no-repeat;
+	outline: none;
+	option {
+		outline: none;
+	}
+}
+
+textarea {
+	width: 100%;
+}
+
+input[type="submit"] {
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	flex-shrink: 0;
+	background: $black;
+	color: $white;
+	border: 0;
+	font-size: 16px;
+	border-radius: 10px;
+	cursor: pointer;
+}

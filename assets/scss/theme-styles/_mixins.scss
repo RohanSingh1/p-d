@@ -1,0 +1,86 @@
+@mixin marginandpadding($m,$p){
+    margin: $m;
+    padding: $p;
+}
+@mixin marginandpaddingxy($my,$mx,$py,$px){
+    margin: $my $mx;
+    padding: $py $px;
+}
+@mixin heightandwidth($h,$w){
+    height: $h;
+    width: $w;
+}
+@mixin centerflex(){
+    align-items: center;
+    justify-content: center;
+}
+@mixin defaultfigure(){
+    figure{
+        margin: 0;
+        img {
+            max-width: 100%;
+            display: block;
+        }
+    }
+}
+
+/// Responsive
+@mixin breakpoint($point) {
+    @if $point==xxxl {
+        @media (min-width: 1920px) {
+            @content;
+        }
+    }
+    @else if $point==xxl {
+        @media (min-width: 1640px) {
+            @content;
+        }
+    }
+    @else if $point==xl {
+        @media (min-width: 1300px) {
+            @content;
+        }
+    }
+    @else if $point==desktop {
+        @media (min-width: 1025px) {
+            @content;
+        }
+    }
+    @else if $point==tabletLarge {
+        @media (min-width: 992px) {
+            @content;
+        }
+    }
+    @else if $point==tablet {
+        @media (min-width: 769px) {
+            @content;
+        }
+    }
+    @else if $point==sm {
+        @media (min-width: 576px) {
+            @content;
+        }
+    }
+    @else if $point==xs {
+        @media (min-width: 0px) {
+            @content;
+        }
+    }
+}
+
+/* Animations on different Navigators */
+
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+    @-ms-keyframes #{$name} {
+        @content;
+    }
+    @keyframes #{$name} {
+        @content;
+    }
+}

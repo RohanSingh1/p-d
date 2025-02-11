@@ -1,0 +1,14 @@
+.main{
+    min-height: 600px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @include breakpoint(tabletLarge){
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    // a {
+    //     text-decoration: underline;
+    //     color: $primary-color;
+    //     font-weight: $light;
+    // }
+}

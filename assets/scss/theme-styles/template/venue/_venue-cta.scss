@@ -1,0 +1,140 @@
+.venue-cta {
+    padding: 60px 0;
+    text-align: center;
+    &__title{
+        font-weight: 400;
+        margin: 0 0 40px;
+    }
+    &-insta {
+        margin-bottom: 30px;
+        @include breakpoint(tablet){            
+            margin-bottom: 40px;
+        }
+        &__link{
+            font-size: 22px;
+            svg {
+                width: 50px;
+                height: 50px;
+                display: block;
+                margin: 0 auto 20px;
+            }
+        }
+    }
+    
+    &__table {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 581px;
+        width: 100%;
+        @include breakpoint( tablet ){
+            text-align: left;
+        }
+        &__left {
+            width: 100%;
+            padding-bottom: 35px;
+            margin-bottom: 35px;
+            border-bottom: 1px solid $black;
+            @include breakpoint( tablet ){
+                padding-right: 60px;
+                border-right: 1px solid $black;
+                width: 52%;
+                padding-bottom: unset;
+                margin-bottom: unset;
+                border-bottom: unset;
+                text-align: right;
+            }
+            &__phone{
+                margin-bottom: 20px;
+            }
+            &__email{
+                a {
+                    text-decoration: underline;
+                    text-transform: uppercase;
+                }
+            }
+        }    
+        &__right {
+            width: 100%;
+            @include breakpoint( tablet ){
+                width: 48%;
+                padding-left: 60px;
+            }
+        }
+        &__title{
+            margin: 0 0 20px;
+            font-weight: 400;
+            font-size: 14px;
+            @include breakpoint(tablet){
+                font-size: 21px;
+            }
+        }
+        &__newsletter{
+            .gform_wrapper.gravity-theme{
+                .gfield {
+                    input[type="email"] {
+                        color: $black_button;
+                        border: 1px solid $black_button;
+                        border-radius: 0;
+                        width: 100%;
+                        padding: 9px 14px !important;
+                        font-family: inherit;
+                        &::placeholder {
+                            color: $black_button;
+                        }
+                        @include breakpoint(tablet){
+                            max-width: 210px;
+                            padding: 16px 14px !important;
+                        }
+                    }
+                    &.gfield_error input[type="email"] {
+                        border-color: #c02b0a;
+                    }
+                }
+                #field_submit, 
+                .gform_footer {
+                    height: 0;
+                    overflow: hidden;
+                    padding: 0;
+                    visibility: hidden;
+                }
+                .gform_validation_errors {
+                    display: none;
+                }
+                .gfield_validation_message {
+                    display: block;
+                }
+            }
+            #sr-subscription-root {
+                & > button {
+                    background: transparent !important;
+                    height: auto !important;
+                    border-radius: 0 !important;
+                    border-color: $black !important;
+                    span {                    
+                        font-size: 20px !important;
+                        color: $black !important;
+                        text-transform: uppercase !important;
+                    }
+                }
+                [data-test="ui-kit-portal-root"] {
+                    button {
+                        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 52 50" fill="none"><line x1="1.20891" y1="49.2189" x2="49.2922" y2="1.13566" stroke="%231D1B14" stroke-width="2"/><line y1="-1" x2="68" y2="-1" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 49.999 49.926)" stroke="%231D1B14" stroke-width="2"/></svg>');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: 20px;
+                        &:hover {
+                            background-color: transparent;
+                        }
+                        i {
+                            display: none;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}

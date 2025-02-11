@@ -1,0 +1,136 @@
+.pd-megamenu {
+    background: $off__white;
+    left: 0;
+    opacity: 0;
+    padding: 110px 0 50px;
+    pointer-events: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateY(-100px);
+    transition: transform .5s cubic-bezier(.25,.1,.29,.99), opacity .5s;
+    z-index: 9;
+    @include breakpoint( tabletLarge){
+        padding: 160px 0 80px;
+    }
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+        overflow-y: auto;
+        height: calc(100vh - 160px);
+        @include breakpoint( tablet ){
+            height: unset;
+        }
+    }    
+    &__venue {
+        width: 100%;
+        @include breakpoint( sm ){
+            width: calc( ( 100% / 2 ) - 9px);
+        }
+        @include breakpoint( tablet ){
+            width: calc( ( 100% / 3 ) - 15px);
+        }
+        @include breakpoint( tabletLarge ){
+            width: calc( ( 100% / 5 ) - 15px);
+        }
+        &__image {
+            padding-bottom: 50%;
+            position: relative;
+            background-size: cover;
+            margin-bottom: 15px;
+            @include breakpoint( sm ){
+                padding-bottom: 83%;
+            }
+            &__overlay {
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                z-index: 0;
+                width: 0;
+                transition: width .3s cubic-bezier(.25,.1,.29,.99);
+            }
+            &:hover .pd-megamenu__venue__image__overlay{
+                width: 100%;
+            }
+            .pd-overlay-link {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 2;
+            }
+            img {
+                left: 0;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: auto;
+                height: 72.578px;
+                margin: 0 auto;
+                right: 0;
+                z-index: 1;
+                padding: 0 20px;
+            }
+            &::before {
+                content: '';
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                background: linear-gradient(0deg, rgba(29, 27, 20, 0.30) 0%, rgba(29, 27, 20, 0.30) 100%);
+            }
+        }
+        &__link{
+            text-transform: uppercase;
+            font-size: 14px;
+            font-family: $font__primary;
+            &:after {
+                content: '';
+                background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="5" height="8" viewBox="0 0 5 8" fill="none"><path d="M1 0.736572L4.26892 4.00547L1 7.27439" stroke="%231D1B14" stroke-width="0.7"/></svg>');
+                width: 15px;
+                display: inline-block;
+                height: 10px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-left: 5px;
+            }
+        }
+        &__links{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            @include breakpoint(tabletLarge){
+                display: block;
+            }
+        }
+        // &.custom-venue .pd-megamenu__venue__image img {
+        //     padding: 0 40px;
+        // }
+    }
+}
+.pd-megamenu__overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    background: #000;
+    opacity: .3;
+    display: none;
+}
+.open-megamenu {
+    .pd-megamenu {
+        transform: none;
+        transition: transform .75s cubic-bezier(.25,.1,0,1),opacity .5s;
+        opacity: 1;
+        pointer-events: all;
+    }    
+    .pd-megamenu__overlay {
+        display: block;
+    }
+} 

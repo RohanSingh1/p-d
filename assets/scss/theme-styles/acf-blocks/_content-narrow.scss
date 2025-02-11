@@ -1,0 +1,25 @@
+.pd-content{
+    &-block{
+        padding: 40px 0;
+        @include breakpoint(tabletLarge){
+            padding: 80px 0;
+        }
+        iframe {
+            height: 1596px;
+            @media ( min-width: 620px ) {
+                height: 1718px;
+            }
+            @media ( min-width: 800px ) {
+                height: 1675px;
+            }
+            @media ( min-width: 1322px ) {
+                height: 1720px;
+            }
+        }
+    }
+    &--narrow {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}

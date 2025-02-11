@@ -1,0 +1,83 @@
+.pd-contactdetails {
+    margin: 70px 0px 35px;
+    &-grid {
+        max-width: 940px;
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        text-align: center;
+        font-size: 14px;
+        text-transform: uppercase;
+        justify-content: center;
+        gap: 50px;
+        @include breakpoint( tablet ){
+            gap: 0;
+        }
+        @include breakpoint( tabletLarge ){
+            font-size: 20px;
+        }
+    }
+    &-item {
+        width: 100%;
+        @include breakpoint( tablet ){
+            width: 50%;
+            &:nth-child(n+3) {
+                padding-top: 80px; // padding top after 2 item
+            }
+            &:nth-child(even) {
+                padding-left: 50px;
+            }
+            &:nth-child(odd):not(:nth-child(5)) {
+                padding-right: 50px;
+                border-right: 1px solid $black;
+            }
+        }
+        @include breakpoint( tabletLarge ){
+            &:nth-child(even) {
+                padding-left: 100px;
+            }
+            &:nth-child(odd):not(:nth-child(5)) {
+                padding-right: 100px;
+            }
+        }
+        &__title {
+            font-family: $font__primary;
+            font-weight: 400;
+            margin: 0 0 12px;
+            font-size: 26px;
+            @include breakpoint( tabletLarge ) { 
+                font-size: 30px;
+            }
+        }
+        &__desc{
+            margin-bottom: 18px;
+        }
+        &-info{
+            margin-bottom: 22px;
+        }
+        .pd_button {
+            padding: 6px 50px;
+            font-size: 14px;
+            @include breakpoint( tabletLarge ) { 
+                font-size: 20px;
+            }
+        }
+    }
+    &-bookbtn {
+        margin-bottom: 22px;
+        a {
+            display: inline-block;
+        }
+    }   
+    &__email {
+        display: block;
+        text-transform: uppercase;
+    }
+    &__insta{
+        font-size: 12px;
+        @include breakpoint( tabletLarge ) { 
+            font-size: 14px;
+        }
+    }
+}

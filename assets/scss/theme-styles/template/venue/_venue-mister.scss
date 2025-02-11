@@ -1,0 +1,142 @@
+.postname-mister-grotto {
+    font-family: $font_pes;
+    .pd-venue-banner{
+        &-content__desc{   
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 1.52;
+            margin-bottom: 20px;
+            @include breakpoint( tabletLarge ){
+                font-size: 20px;
+            }
+            p {
+                line-height: inherit;
+            }
+        }
+        .pd_button {
+            font-family: $font_clarke;
+            padding: 8px 50px 11px;
+            font-size: 16px;
+            @include breakpoint(tabletLarge){
+                padding: 10px 50px 14px;
+                font-size: 20px;
+            }         
+        }
+    }    
+    .pd-intro-content{
+        color: $white;
+        &__title{
+            font-family: $font_clarke;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        &__description {
+            font-weight: 700;
+            letter-spacing: -0.42px;
+            line-height: 1.5;
+            @include breakpoint(tabletLarge){
+                line-height: 1.2;
+                letter-spacing: -.6px;
+            }
+        }
+        .pd_button{
+            color: $white;
+            border-color: $white;
+            font-family: $font_clarke;
+            padding: 8px 50px 11px;
+            font-size: 16px;
+            @include breakpoint(tabletLarge){
+                padding: 10px 50px 14px;
+                font-size: 20px;
+            }
+        }
+    }
+    .pd-menu{
+        background: #EEF5FC;
+        &-content{
+            &__title{
+                text-transform: uppercase;
+                font-weight: 500;
+                font-family: $font_clarke;
+            }
+            &__description {
+                font-weight: 700;
+                letter-spacing: -0.42px;
+                line-height: 1.5;
+                font-size: 14px;
+                @include breakpoint(tabletLarge){
+                    line-height: 1.2;
+                    letter-spacing: -.6px;
+                    font-size: 20px;
+                }
+            }
+        }
+        &-links{
+            font-size: 35px;
+            color: $blue;
+            font-family: $font_clarke;
+            @include breakpoint(tabletLarge){
+                font-size: 45px;
+            }
+            &.pd-link-animate:after {
+                background-color: $blue;
+                bottom: 2px;
+            }
+            &-wrap {
+                gap: 20px 40px;
+            }
+        }
+    }
+    .venue-cta {
+        text-transform: uppercase;
+        background: #EEF5FC;
+        &-insta__link{
+            font-size: 22px;
+            font-family: $font_clarke;   
+        }
+        &__title{
+            font-family: $font_clarke;
+            font-size: 42px;
+            font-weight: 500;
+        }
+        &__table {
+            font-family: $font_clarke;
+            &__title{
+                font-family: $font_clarke;
+                font-weight: 500;
+                font-size: 18px;
+                @include breakpoint( tablet ){
+                    font-size: 21px;
+                }
+            }
+            &__left{
+                &__phone{
+                    font-family: $font_pes;
+                    margin-bottom: 15px;
+                }
+                &__email{
+                    font-family: $font_pes;
+                }
+            }
+            &__newsletter{
+                input[type="email"] {
+                    font-family: $font_pes;
+                    // &::placeholder {
+                    //     font-family: $font_pes;
+                    // }
+                }
+                #sr-subscription-root {
+                    & > button {
+                        span {
+                            font-family: $font_clarke !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .site-footer{
+        background: #EEF5FC;
+    }
+}

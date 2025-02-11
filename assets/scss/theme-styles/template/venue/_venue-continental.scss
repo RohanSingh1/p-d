@@ -1,0 +1,161 @@
+.postname-continental-deli {
+    font-family: $font__gothic;
+    .pd-venue-banner-content{
+        &__desc {
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            max-width: 500px;
+            h6 {
+                font-size: 32px;
+                font-weight: 700;
+                font-family: $font__gothic;
+            }
+            table{ 
+                line-height: 1.5;
+                font-size: 16px;
+                @include breakpoint( tabletLarge ) {
+                    font-size: 20px;
+                }
+            }
+        }
+        .pd_button {
+            font-family: $font__gothic;
+            padding: 12px 50px 7px;
+            @include breakpoint( tabletLarge ) {
+                padding: 15px 50px 10px;
+            }
+        }
+    } 
+    .pd-intro-content{
+        color: $white;
+        &__title{
+            font-family: $font__gothic;
+            font-weight: 500;
+            margin: 0 0 30px;
+            @include breakpoint(tablet){
+                margin: 0 0 40px;
+            }
+        }
+        &__description {
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.15;
+        }
+        .pd_button{
+            color: $white;
+            border-color: $white;
+            font-family: $font__gothic;
+            padding: 12px 50px 7px;
+            font-size: 16px;
+            &:hover{
+                color: $black;
+            }
+            @include breakpoint(tabletLarge){
+                padding: 15px 50px 10px;
+                font-size: 20px;
+            }
+        }
+    }
+    .pd-menu{
+        background: #FEEEEF;
+        &-content{
+            &__title{
+                text-transform: uppercase;
+                font-weight: 700;
+                font-family: $font__gothic;
+                position: relative;
+                display: inline-block;
+                &:before,
+                &:after {
+                    content: '';
+                    width: 50px;
+                    height: 10px;
+                    border-radius: 2px;
+                    border: 1px solid $black_button;
+                    background: $red;
+                    position: absolute;
+                    right: 100%;
+                    margin-right: 24px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    margin-top: -10px;
+                }
+                &::after{
+                    left: 100%;
+                    margin-left: 24px;
+                    margin-right: 0;
+                    right: auto;
+                }
+            }
+            &__description {
+                font-weight: 700;
+                line-height: 1.25;
+                margin-bottom: 40px;
+            }
+            
+        }
+        &-links{
+            font-size: 45px;
+            font-family: $font__gothic;
+            line-height: 1;
+            &.pd-link-animate:after {
+                background-color: $red;
+                height: 3px;
+            }
+        }
+    }
+    .venue-cta {
+        background-color: #FEEEEF;
+        text-transform: uppercase;
+        &-insta__link{
+            font-size: 22px;
+            font-family: $font__gothic;   
+        }
+        &__title{
+            font-family: $font__gothic;
+            font-size: 42px;
+            font-weight: 500;
+        }        
+        &__table {
+            font-family: $font__gothic;
+            &__title{
+                font-family: $font__gothic;
+                font-size: 21px;
+                font-weight: 500;
+            }
+            &__left{
+                &__phone{
+                    font-family: $font__gothic;
+                    margin-bottom: 15px;
+                }
+                &__email{
+                    font-family: $font__gothic;
+                }
+            }
+            &__newsletter{
+                input[type="email"] {
+                    font-family: $font__gothic;
+                    // &::placeholder {
+                    //     font-family: $font__gothic;
+                    // }
+                }
+                .gform_wrapper.gravity-theme .gfield_validation_message {
+                    padding: 13px 13px 8px;
+                }
+                #sr-subscription-root {
+                    & > button {
+                        & > div {
+                            padding: 18px 16px 11px;
+                        }
+                        span {
+                            font-family: $font__gothic !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .site-footer{
+        background-color: #FEEEEF;
+    }
+}

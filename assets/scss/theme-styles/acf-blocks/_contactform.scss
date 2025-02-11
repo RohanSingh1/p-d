@@ -1,0 +1,23 @@
+.pd-contactform {
+    margin: 80px 0;
+    &__title{
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    &-form {
+        max-width: 940px;
+        width: 100%;
+        margin: 0 auto;
+        .gform_confirmation_message_2 {
+            text-align: center;
+        }
+        .gform_wrapper.gravity-theme {
+            .ginput_complex span.name_first {
+                margin-bottom: 20px;
+            }        
+            .ginput_complex span.name_last {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

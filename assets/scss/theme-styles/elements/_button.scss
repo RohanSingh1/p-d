@@ -1,0 +1,83 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 1px solid;
+	border-color: $primary_color;
+	background: $primary_color;
+	color: $white;
+	padding: 7px 27px;
+	font-weight: $regular;
+	text-transform: uppercase;
+	color: $white;
+	background-color: $black_button;
+	border-color: $black_button;
+	font-family: $font__primary;
+	font-size: 16px;
+	@include breakpoint(tabletLarge){
+		font-size: 20px;
+		padding: 10px 27px;
+	}
+}
+
+.pd_button {
+	text-transform: uppercase;
+	padding: 7px 50px;
+	border: 1px solid;
+	border-color: $black;
+	font-weight: $regular;
+	text-align: center;
+	transition: all 0.3s;
+    text-decoration: none;
+    color: $white;
+	text-wrap: nowrap;
+    cursor: pointer;
+	font-size: 16px;
+	color: $white;
+	background-color: $black_button;
+	border-color: $black_button;
+	font-family: $font__primary;
+	@include breakpoint(tabletLarge){
+		padding: 10px 50px;
+		font-size: 20px;
+	}
+	&--underline{
+		border: transparent;
+		text-decoration: underline;
+	}
+	&--noborder{
+		border: none;
+	}
+	&_bg {
+		&--transparent{
+			color: $white;
+			background-color: transparent;
+			border-color: $white;
+			&:hover{
+				color: $white;
+				background-color: $off__white;
+				// text-shadow: 0 0 12px $black;
+				background-color: $white;
+				color: $black;
+			}
+		}
+		&--white{
+			color: $black;
+			background-color: $white;
+			border-color: $white;
+			&:hover{
+				color: $white;
+				background-color: transparent;
+			}
+		}
+		&--border{
+			color: $black;
+			background-color: transparent;
+			border-color: $black;
+			&:hover{
+				color: $white;
+				background-color: $black;
+			}
+		}
+	}
+}

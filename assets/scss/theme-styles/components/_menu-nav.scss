@@ -1,0 +1,25 @@
+.menu-nav {
+    .menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        padding-left: 0;
+        flex-wrap: wrap; // Allow items to wrap in smaller screens
+        gap: 20px; // Consistent spacing
+
+        li a {
+            color: $black;
+            line-height: 19px;
+            text-underline-offset: 5px;
+            text-decoration: none;
+            font-size: 14px;
+            @include breakpoint( tablet ){
+                font-size: 18px;
+            }
+            &:hover {
+                color: $black;
+            }
+        }
+    }
+}

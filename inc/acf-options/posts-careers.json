@@ -1,0 +1,173 @@
+{
+    "key": "group_647e32f376b80",
+    "title": "Posts: Careers",
+    "fields": [
+        {
+            "key": "field_647e3cad39ece",
+            "label": "Hiring Posts",
+            "name": "careers__hiring_post",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_647e3d3839ed1",
+                    "label": "Is this for a specific Venue?",
+                    "name": "careers__venue",
+                    "aria-label": "",
+                    "type": "post_object",
+                    "instructions": "Leave it blank if not.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "venue"
+                    ],
+                    "post_status": "",
+                    "taxonomy": "",
+                    "return_format": "object",
+                    "multiple": 0,
+                    "allow_null": 1,
+                    "bidirectional": 0,
+                    "ui": 1,
+                    "bidirectional_target": []
+                },
+                {
+                    "key": "field_647e3d0739ed0",
+                    "label": "Description( Visible Text )",
+                    "name": "careers__job_description",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 0,
+                    "delay": 0
+                },
+                {
+                    "key": "field_64a3ff967df4c",
+                    "label": "Description( Hidden Text )",
+                    "name": "careers__job_description_detail",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "Please add content to show after Read More button is clicked. Read More button won't show if content is empty.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 0,
+                    "delay": 0
+                },
+                {
+                    "key": "field_647e3d6f39ed2",
+                    "label": "Still available?",
+                    "name": "careers__still_available",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "If you select \"No\", the \"Apply Now\" button will be hidden.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "Check to show apply button",
+                    "default_value": 0,
+                    "allow_in_bindings": 1,
+                    "ui_on_text": "Yes",
+                    "ui_off_text": "No",
+                    "ui": 1
+                },
+                {
+                    "key": "field_67612e102f2ee",
+                    "label": "Phone number",
+                    "name": "phone_number",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                }
+            ]
+        },
+        {
+            "key": "field_64b5fd4597a65",
+            "label": "Excerpt",
+            "name": "post_excerpt",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "This content will be shown in search result page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 5,
+            "placeholder": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "career"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1735199259
+}

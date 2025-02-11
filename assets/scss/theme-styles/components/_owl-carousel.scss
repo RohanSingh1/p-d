@@ -1,0 +1,23 @@
+.owl-carousel{
+    .owl-nav {
+        button {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin: 0 20px;
+            transform: translateY(-50%);
+            width: 55px;
+            height: 50px;
+            background-repeat: no-repeat !important;
+            background-size: contain !important;
+            background-image: url('data:image/svg+xml,<svg width="27" height="50" viewBox="0 0 27 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector 3" d="M25.8418 1.1582L2 25L25.8418 48.8418" stroke="white" stroke-width="1.5"/></svg>') !important;
+            background-color: transparent !important;
+            &.owl-next{
+                transform: translateY(-50%) rotate(-180deg);
+                right: 0;
+                left: auto;
+            }
+
+        }
+    }
+}

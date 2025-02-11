@@ -1,0 +1,40 @@
+.custom-select{
+    &-opener{
+        background-color: transparent;
+        border: 1px solid $black;
+        padding: 13.5px 14px;
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none"><path d="M1.14453 1.16113L7.82257 7.83862L14.5001 1.16113" stroke="%231D1B14"/></svg>') no-repeat;
+            width: 16px;
+            height: 10px;
+            transform: translateY(-50%);
+        }
+    }
+    &-panel{
+        background-color: $white;
+        border-left: 1px solid $black;
+        border-right: 1px solid $black;
+    }
+    &-option{
+        &.is-selected,
+        &:hover{
+            background-color: $off__white;
+        }
+        &.is-selected{
+            &:before{
+                display: none;
+            }            
+        }
+    }
+    
+}
+.customSelect.is-open{
+    .custom-select-panel {
+        border-bottom: 1px solid $black;
+    }
+}

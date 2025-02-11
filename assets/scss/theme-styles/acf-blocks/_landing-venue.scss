@@ -1,0 +1,63 @@
+.pd-landing-venue {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    @include breakpoint(tablet){
+        max-width: 950px;
+        margin: 0 auto;
+        padding: 70px 0;
+    }
+    @include breakpoint(xxl){
+        max-width: unset;
+        margin: unset;
+    }
+    &__item {
+        width: 100%;
+        text-align: center;
+        color: $white;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        justify-content: space-between;
+        padding: 37px 51px;
+        font-size: 14px;
+        @media (min-width: 680px){
+            padding: 30px 40px;
+            width: calc( 100%/2 - 5px );
+            font-size: 16px;
+        }
+        @include breakpoint(xxl){
+            padding: 46px 63px;
+            width: calc( 100%/4 - 8px );
+            gap: 35px;
+        }
+        &__link{
+            display: inline-block;
+        }
+        &__open {
+            font-size: 20px;
+            @include breakpoint(tablet){
+                font-size: 25px;
+            }
+        }
+        &__image {
+            height: 135px;
+            position: relative;
+            img {
+                max-height: 135px;
+                max-width: 310px;
+                margin: 0 auto;
+                text-align: center;
+                display: block;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 50%;
+                bottom: 0;
+                transform: translateY(-50%);
+            }   
+        }
+    }
+}
